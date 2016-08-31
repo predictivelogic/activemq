@@ -26,3 +26,6 @@ default['activemq']['wrapper']['useDedicatedTaskRunner'] = 'true'
 default['activemq']['enabled'] = true
 default['activemq']['enable_stomp'] = true
 default['activemq']['use_default_config'] = false
+
+# Prevents non-matching messages stacking up on virtual topics with selectors.
+default['activemq']['use_selector_aware_virtual_topics'] = true
